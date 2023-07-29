@@ -17,13 +17,15 @@
 </head>
 <body>
   <header class="header">
-    <h2 class="header__logo">snap</h2>
-    <ul id="header__menu">
-      <li><a href="">Feauters</a></li>
-      <li><a href="">Company</a></li>
-      <li><a href="">Careers</a></li>
-      <li><a href="">About</a></li>
-    </ul>
+    <div class="header__left">
+      <h2 class="header__logo">snap</h2>
+      <ul id="header__menu">
+        <li><div><a href="">Feauters</a><img src="images/icon-arrow-down.svg"></div></li>
+        <li><div><a href="">Company</a><img src="images/icon-arrow-down.svg"></div></li>
+        <li><div><a href="">Careers</a><img src="images/icon-arrow-down.svg"></div></li>
+        <li><div><a href="">About</a><img src="images/icon-arrow-down.svg"></div></li>
+      </ul>
+    </div>
     <div class="header__buttons">
       <button class="header__login">Login</button>
       <button class="header__register">Register</button>
@@ -31,13 +33,17 @@
   </header>
   <main class="main">
     <div class="main__left">
-      <h1 class="main__tittle">Make remote work</h1>
-      <pre class="main__paragraph">
-        Get your team in sync, no matter your location.
-        Streamline processes, create team rituals, and
-        watch productivity soar.
-      </pre>
-      <button class="main__lean">Learn More</button>
+      <div class="main__left--info">
+        <p class="main__tittle">Make <br> remote work</p>
+        <p class="main__paragraph">
+          Get your team in sync, no matter your location. <br>
+          Streamline processes, create team rituals, and <br>
+          watch productivity soar.
+        </p>
+      </div>
+      <div class="button__learn">
+        <button class="main__learn">Learn More</button>
+      </div>
       <div class="main__sponsors">
         <img src="images/client-databiz.svg" alt="databiz">
         <img src="images/client-audiophile.svg" alt="audiophile">
