@@ -9,7 +9,6 @@
     height: 75vh;
 }
 header {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,12 +70,12 @@ header {
 main {
     display: grid;
     grid-template-columns: 60% 40%;
+    margin-top: 50px;
 }
 .main__left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid blue;
     align-items: center;
 }
 .main__learn {
@@ -107,12 +106,6 @@ main {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-.main__left--info {
-    border: 1px solid green;
-}
-.main__left--down {
-    border: 1px solid;
-}
 .main__left--down {
     display: flex;
     flex-direction: column;
@@ -124,7 +117,7 @@ main {
     width: 100%;
 }
 .main__down {
-    border: 1px solid;
+    /* border: 1px solid; */
     align-self: flex-start;
 }
 .button__learn {
@@ -133,4 +126,66 @@ main {
 .main__sponsors {
     display: flex;
     justify-content: space-around;
+}
+.main__right img {
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+  
+/* Inicio Responsive */
+@media (max-width: 930px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      transition: 0.4s;
+    }
+    .main__right {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+}
+/* Inicio Versión Celular */
+@media (max-width: 570px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    .main__right img {
+        content: url(images/image-hero-mobile.png);
+        height: auto;
+    }
+    .header__left {
+        flex-direction: column;
+        gap: 0;
+    }
+    #header__menu {
+        display:none;
+    }
+    .header__buttons {
+        display: none;
+    }
+    .main__tittle {
+        font-size: 40px;
+    }
+    .main__tittle br {
+        display: none;
+    }
+    .main__paragraph {
+        letter-spacing: 0;
+        text-align:center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .main__down {
+        align-self: none;
+    }
+    .button__learn {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .main__sponsors img {
+        height: 16px;
+    }
 }
