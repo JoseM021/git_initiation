@@ -1,6 +1,6 @@
 /* Función para anexar etiquetas en el nav, para el menú hamburguesa */
 function moverboton() {
-    if (window.innerWidth <= 570) {
+    if (window.innerWidth <= 880) {
         let nav = document.querySelector(".header__nav");
         let buttons = document.querySelector(".header__buttons");
         nav.appendChild(buttons);
@@ -26,3 +26,16 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
 /* Fin abrir y cerrar menu hamburguesa */
+/* Inicio de Feauters Abrir */
+let container_feauters = document.querySelector(".select__container");
+let open_container = document.querySelector(".select__feauters");
+let close_container = document.querySelector(".header__li-company");
+
+open_container.addEventListener("click", () => {
+    container_feauters.classList.add("visible");
+})
+close_container.addEventListener("click", () => {
+    container_feauters.classList.remove("visible");
+})
+
+
