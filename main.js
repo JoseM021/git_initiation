@@ -27,15 +27,18 @@ cerrar.addEventListener("click", () => {
 })
 /* Fin abrir y cerrar menu hamburguesa */
 /* Inicio de Feauters Abrir */
-let container_feauters = document.querySelector(".select__container");
-let open_container = document.querySelector(".select__feauters");
-let close_container = document.querySelector(".header__li-company");
+let container_two = document.querySelectorAll(".header__li-feauters");
 
-open_container.addEventListener("click", () => {
-    container_feauters.classList.add("visible");
+container_two.forEach(event_click_two => {
+    event_click_two.addEventListener("click", () =>{
+        event_click_two.nextElementSibling.classList.toggle("activar");
+    })
 })
-close_container.addEventListener("click", () => {
-    container_feauters.classList.remove("visible");
-})
+
+
+
+
+
+
 
 
