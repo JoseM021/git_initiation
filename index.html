@@ -19,7 +19,7 @@
 <body>
   <header class="header">
     <div class="header__left">
-      <h2 class="header__logo">snap</h2>
+      <div class="header__logo"><h2 >snap</h2></div>
       <nav class="header__nav" id="nav">
         <div class="menu__close"><img src="images/icon-close-menu.svg" alt="close-menu" id="cerrar"></div>
         <ul id="header__menu">
@@ -34,7 +34,16 @@
               <div class="select__container-item"><img src="images/icon-planning.svg" alt="planning-icon"><p>Planning</p></div>
             </div>
           </li>
-          <li class="header__li-company"><div><p href="">Company</p><img src="images/icon-arrow-down.svg"></div></li>
+          <li class="header__li-company">
+            <div class="select__company">
+              <p href="">Company</p><div class="company__img"><img src="images/icon-arrow-down.svg"></div>
+            </div>
+            <div class="company__container">
+              <div class="company__container-item"><p>History</p></div>
+              <div class="company__container-item"><p>Our Team</p></div>
+              <div class="company__container-item"><p>Blog</p></div>
+            </div>
+          </li>
           <li><div class="none_menu"><p href="">Careers</p></div></li>
           <li><div class="none_menu"><p href="">About</p></div></li>
         </ul>
@@ -61,7 +70,7 @@
           <div class="button__learn">
             <button class="main__learn">Learn more</button>
           </div>
-          <div class="main__sponsors">
+          <div class="main__sponsors" draggable="false">
             <div><img src="images/client-databiz.svg" alt="databiz"></div>
             <div><img src="images/client-audiophile.svg" alt="audiophile"></div>
             <div><img src="images/client-meet.svg" alt="meet"></div>
